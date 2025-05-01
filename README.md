@@ -1,12 +1,12 @@
-# Student Team Members Management Application (Team: [Your Team Name])
+# Student Team Members Management Application (Team: team_C404)
 
-This is a full-stack web application for managing team members, built for the 21CSS301T Full Stack Development course (CLAT-2).
+This is a full-stack web application for managing team members
 
 ## Technologies Used
 
-* **Frontend**: React.js (Vite/CRA), React Router, Axios, CSS
+* **Frontend**: React.js (Vite), React Router, Axios, CSS
 * **Backend**: Node.js, Express.js, MongoDB (Mongoose), Multer (for file uploads), CORS, Dotenv
-* **Database**: MongoDB (Local or Atlas)
+* **Database**: MongoDB (Local)
 
 ## Features
 
@@ -55,8 +55,8 @@ This is a full-stack web application for managing team members, built for the 21
 
 2.  **Clone Repository**:
     ```bash
-    git clone [Your GitHub Repository URL]
-    cd [your-team-name-repo]
+    git clone https://github.com/theshikharpurwar/team_C404
+    cd team_C404
     ```
 
 3.  **Backend Setup**:
@@ -91,7 +91,7 @@ This is a full-stack web application for managing team members, built for the 21
     *Open a new terminal*
     ```bash
     cd frontend
-    npm run dev # (for Vite) or npm start (for CRA)
+    npm run dev # (for Vite)
     ```
     *(The frontend should open in your browser, e.g., http://localhost:5173 or http://localhost:3000)*
 
