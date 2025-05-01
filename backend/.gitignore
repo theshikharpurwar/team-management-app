@@ -1,0 +1,24 @@
+# Backend .gitignore
+
+# Node modules
+node_modules/
+
+# Environment variables file
+.env
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Uploaded files (optional - depends if you want to commit example uploads)
+# uploads/

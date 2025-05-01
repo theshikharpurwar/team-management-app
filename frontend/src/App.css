@@ -1,0 +1,174 @@
+/* frontend/src/App.css - Basic Global Styles */
+
+/* --- Global Styles & Resets --- */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f6; /* Light grey background */
+  color: #333;
+  line-height: 1.6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure footer stays at bottom */
+}
+
+/* --- Links --- */
+a {
+  color: #007bff; /* Standard link blue */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+/* --- Buttons (Global Styles) --- */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #5a6268;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-details {
+   background-color: #17a2b8; /* Teal */
+   color: white;
+   margin-top: 10px; /* Add space above */
+}
+
+.btn-details:hover:not(:disabled) {
+   background-color: #138496;
+}
+
+.btn-submit {
+  background-color: #28a745; /* Green */
+  color: white;
+  width: 100%; /* Make submit button full width within its container */
+  padding: 12px;
+  font-size: 1.1rem;
+}
+
+.btn-submit:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.btn-back {
+    background-color: #ffc107; /* Yellow */
+    color: #333;
+    margin-top: 20px;
+}
+
+.btn-back:hover:not(:disabled) {
+    background-color: #e0a800;
+}
+
+
+/* --- Header & Footer --- */
+.app-header {
+  background-color: #343a40; /* Dark background */
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.app-header nav a {
+  color: #adb5bd; /* Lighter text for links */
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+.app-header nav a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.app-footer {
+  background-color: #f8f9fa; /* Light grey footer */
+  color: #6c757d; /* Muted text color */
+  padding: 15px;
+  margin-top: auto; /* Push footer to bottom */
+  font-size: 0.9rem;
+  border-top: 1px solid #dee2e6; /* Subtle top border */
+}
+
+/* --- Main Content Area --- */
+.app-main {
+  padding: 20px;
+  flex-grow: 1; /* Allow main content to grow and fill space */
+  max-width: 1200px; /* Max width for content */
+  margin: 0 auto; /* Center content */
+  width: 95%; /* Responsive width */
+}
+
+/* --- Loading & Error States (Global) --- */
+.loading, .error {
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin: 20px auto; /* Center these messages */
+  max-width: 600px; /* Give them a max width */
+  text-align: center;
+}
+.error {
+  color: #dc3545; /* Red for errors */
+  border: 1px solid #f5c6cb;
+  background-color: #f8d7da;
+  border-radius: 5px;
+}
+
